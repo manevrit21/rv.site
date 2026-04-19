@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Refine Visuals — Студия премиального фото и видеоконтента, визуального дизайна и креативных концепций." />
+  <title>Refine Visuals</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Custom Cursor for Portfolio -->
+  <div class="cursor-view" id="cursor-view">Смотреть</div>
+
+  <!-- ============================================================
+       Navigation
+       ============================================================ -->
+  <header class="nav" role="banner">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__logo">Refine <span>Visuals</span></a>
+
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="#about">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#process">Процесс</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+
+      <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#about">О нас</a>
+    <a href="#services">Услуги</a>
+    <a href="#portfolio">Портфолио</a>
+    <a href="#process">Процесс</a>
+    <a href="#contact">Контакты</a>
+  </div>
+
+  <!-- ============================================================
+       Hero Section
+       ============================================================ -->
+  <section id="hero" class="hero">
+    <div class="hero__decoration" aria-hidden="true">
+      <svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <!-- Concentric circles — top right -->
+        <circle cx="1100" cy="200" r="320" stroke="rgba(184,196,208,0.06)" stroke-width="0.5" fill="none"/>
+        <circle cx="1100" cy="200" r="220" stroke="rgba(184,196,208,0.05)" stroke-width="0.5" fill="none"/>
+        <circle cx="1100" cy="200" r="130" stroke="rgba(184,196,208,0.04)" stroke-width="0.5" fill="none" class="deco-spin"/>
+        <!-- Circle — bottom left -->
+        <circle cx="200" cy="700" r="180" stroke="rgba(184,196,208,0.04)" stroke-width="0.5" fill="none"/>
+        <!-- Arc -->
+        <path d="M0,480 Q720,250 1440,480" stroke="rgba(184,196,208,0.05)" stroke-width="0.5" fill="none"/>
+        <!-- Vertical lines -->
+        <line x1="360" y1="0" x2="360" y2="900" stroke="rgba(184,196,208,0.03)" stroke-width="0.5"/>
+        <line x1="1080" y1="0" x2="1080" y2="900" stroke="rgba(184,196,208,0.03)" stroke-width="0.5"/>
+        <!-- Horizontal lines -->
+        <line x1="0" y1="300" x2="1440" y2="300" stroke="rgba(184,196,208,0.03)" stroke-width="0.5"/>
+        <line x1="0" y1="650" x2="1440" y2="650" stroke="rgba(184,196,208,0.03)" stroke-width="0.5"/>
+        <!-- Diagonal accent -->
+        <line x1="0" y1="900" x2="1440" y2="0" stroke="rgba(184,196,208,0.02)" stroke-width="0.5"/>
+      </svg>
+    </div>
+
+    <div class="hero__content">
+      <!-- SVG Monogram — thin serif R V -->
+      <div class="hero__monogram" aria-hidden="true">
+        <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8,52 V8 H32 C44,8 50,16 50,24 C50,32 44,36 34,36 H8" />
+          <path d="M32,36 L50,52" />
+          <path d="M68,8 L84,52 L100,8" />
+        </svg>
+      </div>
+
+      <h1 class="hero__title">Refine Visuals</h1>
+      <p class="hero__subtitle">
+        Снимаем фото и видео для брендов, которым важно, как именно их видят. Точно, чисто, без визуального шума.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#portfolio" class="btn btn--primary">Смотреть портфолио</a>
+        <a href="#contact" class="btn btn--outline">Связаться</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       About Section
+       ============================================================ -->
+  <section id="about" class="section about section--bg">
+    <div class="section__bg" data-parallax-bg>
+      <img src="assets/hf_20260415_224543_4bd4716b-87e6-42e3-bfb7-67a8f0faf235.webp" alt="" loading="lazy" />
+    </div>
+    <div class="section__bg-overlay"></div>
+    <div class="container about__inner">
+      <div class="about__text reveal">
+        <p class="section__label">О нас</p>
+        <h2 class="section__title">Точная работа с тем, как видят ваш бренд</h2>
+        <div class="about__accent-line" aria-hidden="true"></div>
+        <p>
+          Refine Visuals — небольшая студия, которая делает продуктовый контент для брендов и магазинов. Берём обычное фото товара — с витрины, склада или карточки — и превращаем в кадр, который не стыдно поставить рядом с кампейнами мировых марок. Работаем руками и с нейросетями там, где они реально экономят время без потери качества.
+        </p>
+        <p>
+          В каждом проекте один принцип — показать товар лучше, но узнаваемо. Без перегруза, без фальши, без случайных деталей.
+        </p>
+      </div>
+
+      <div class="about__visual reveal stagger-2">
+        <div class="about__visual-frame">
+          <img src="assets/about-moodboard.webp" alt="Атмосфера студии" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Services Section
+       ============================================================ -->
+  <section id="services" class="section services section--bg">
+    <div class="section__bg" data-parallax-bg>
+      <img src="assets/hf_20260415_224554_46cb9312-4c5f-4599-ad45-ce355185c274.webp" alt="" loading="lazy" />
+    </div>
+    <div class="section__bg-overlay"></div>
+    <div class="container">
+      <p class="section__label reveal">Услуги</p>
+      <h2 class="section__title reveal stagger-1">Что мы делаем</h2>
+
+      <div class="services__grid">
+        <!-- Service 01: Ретушь -->
+        <article class="service-card reveal stagger-1">
+          <span class="service-card__number" aria-hidden="true">01</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20,4 C20,4 24,8 24,14 C24,18 22,20 20,22 L20,28 L12,28 L12,22 C10,20 8,18 8,14 C8,8 12,4 12,4" />
+              <line x1="12" y1="28" x2="20" y2="28" />
+              <line x1="14" y1="14" x2="18" y2="14" />
+              <line x1="16" y1="11" x2="16" y2="17" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Ретушь</h3>
+          <p class="service-card__desc">
+            Ретушь и цвет без пластика и переработанных теней. Ткань остаётся тканью, кожа — кожей, металл — металлом. Ровно столько обработки, сколько нужно.
+          </p>
+        </article>
+
+        <!-- Service 02: Визуальный дизайн -->
+        <article class="service-card reveal stagger-2">
+          <span class="service-card__number" aria-hidden="true">02</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="24" height="24" />
+              <line x1="4" y1="12" x2="28" y2="12" />
+              <line x1="4" y1="20" x2="28" y2="20" />
+              <line x1="12" y1="4" x2="12" y2="28" />
+              <line x1="20" y1="4" x2="20" y2="28" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Визуальный дизайн</h3>
+          <p class="service-card__desc">
+            Собираем визуальный язык бренда — палитру, шрифты, мудборд, простые правила. Чтобы карточка товара, сторис и баннер выглядели из одной истории, а не из разных стоков.
+          </p>
+        </article>
+
+        <!-- Service 03: Креативная концепция -->
+        <article class="service-card reveal stagger-3">
+          <span class="service-card__number" aria-hidden="true">03</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="12" />
+              <line x1="16" y1="4" x2="16" y2="10" />
+              <line x1="16" y1="22" x2="16" y2="28" />
+              <line x1="4" y1="16" x2="10" y2="16" />
+              <line x1="22" y1="16" x2="28" y2="16" />
+              <circle cx="16" cy="16" r="2" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Креативная концепция</h3>
+          <p class="service-card__desc">
+            Идея, референсы, раскадровка, финальный кадр — ведём проект с нуля. Помогаем понять, как именно ваш продукт хочет быть показан, и доводим до съёмочной площадки.
+          </p>
+        </article>
+
+        <!-- Service 04: AI-фотография -->
+        <article class="service-card reveal stagger-4">
+          <span class="service-card__number" aria-hidden="true">04</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="6" width="10" height="14" />
+              <rect x="18" y="6" width="10" height="14" />
+              <rect x="4" y="22" width="24" height="4" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">AI-фото и видео</h3>
+          <p class="service-card__desc">
+            Берём съёмку с витрины или образец товара и доводим до уровня luxury-кампейна через нейросети. Без очевидных «ии-косяков» — только там, где технология экономит день работы.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Portfolio Section
+       ============================================================ -->
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <p class="section__label reveal">Портфолио</p>
+      <h2 class="section__title reveal stagger-1">Ваш товар — в любой истории</h2>
+      <p class="portfolio__subtitle reveal stagger-2">Для вашего продукта — фото и видео высшего класса: имиджевые, выверенные до детали, с характером и атмосферой, которые хочется рассматривать.</p>
+
+      <div id="portfolio-grid" class="portfolio__grid"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Process Section
+       ============================================================ -->
+  <section id="process" class="section process section--bg">
+    <div class="section__bg" data-parallax-bg>
+      <img src="assets/hf_20260415_224600_ffb4f7e2-db13-4897-b158-c64849a17a60.webp" alt="" loading="lazy" />
+    </div>
+    <div class="section__bg-overlay"></div>
+    <div class="container">
+      <p class="section__label reveal">Процесс</p>
+      <h2 class="section__title reveal stagger-1">Как мы работаем</h2>
+
+      <div class="process__steps">
+        <div class="process__step reveal stagger-1">
+          <span class="process__step-number">01</span>
+          <h3 class="process__step-title">Знакомство</h3>
+          <p class="process__step-desc">
+            Разбираемся, что у вас за бренд, кому продаёте и какую картинку держите в голове. Собираем референсы и фиксируем направление.
+          </p>
+        </div>
+
+        <div class="process__step reveal stagger-2">
+          <span class="process__step-number">02</span>
+          <h3 class="process__step-title">Создание</h3>
+          <p class="process__step-desc">
+            Снимаем, генерируем, ретушируем — и переделываем, пока кадр не начнёт работать. Правки входят в процесс, это не допуслуга.
+          </p>
+        </div>
+
+        <div class="process__step reveal stagger-3">
+          <span class="process__step-number">03</span>
+          <h3 class="process__step-title">Результат</h3>
+          <p class="process__step-desc">
+            Отдаём файлы в нужных размерах и форматах — под сайт, соцсети, маркетплейсы и печать. Исходники и финальные версии — сразу.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Contact Section
+       ============================================================ -->
+  <section id="contact" class="section contact section--bg">
+    <div class="section__bg" data-parallax-bg>
+      <img src="assets/hf_20260415_224605_f0fa9062-bceb-4fb8-ace3-61b2b9f657f9.webp" alt="" loading="lazy" />
+    </div>
+    <div class="section__bg-overlay"></div>
+    <div class="container reveal">
+      <p class="section__label">Контакты</p>
+      <h2 class="contact__title">Расскажите о проекте</h2>
+      <p class="contact__subtitle">
+        Кратко опишите товар и задачу — ответим, покажем похожие работы и прикинем, как сделать.
+      </p>
+
+      <a href="mailto:refine.visual@yandex.ru" class="contact__email">refine.visual@yandex.ru</a>
+
+      <div class="contact__divider" aria-hidden="true"></div>
+
+      <div class="contact__socials">
+        <a href="https://www.instagram.com/refine__visuals?igsh=bmRnbWkzNHhtYnFl" aria-label="Instagram" class="contact__social-link" target="_blank" rel="noopener">
+          <img src="assets/icon-instagram.webp" alt="Instagram" class="contact__social-icon" />
+          <span>Instagram</span>
+        </a>
+        <a href="https://t.me/refinevisual" aria-label="Telegram" class="contact__social-link" target="_blank" rel="noopener">
+          <svg class="contact__social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785L22.78 5.063c.309-1.239-.473-1.8-1.282-1.434l-.833.088z"/>
+          </svg>
+          <span>Telegram</span>
+        </a>
+      </div>
+
+      <a href="https://t.me/refinevisual" class="btn btn--primary" target="_blank" rel="noopener">Начать проект</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Footer
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2026 Refine Visuals. Все права защищены.</p>
+      <div class="footer__links">
+        <button type="button" class="footer__legal-btn" aria-label="Конфиденциальность" data-modal="privacy-modal">Конфиденциальность</button>
+        <button type="button" class="footer__legal-btn" aria-label="Условия" data-modal="terms-modal">Условия</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       Project Modal
+       ============================================================ -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal">
+      <button id="modal-close" class="modal__close" aria-label="Закрыть">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Legal Modals -->
+  <div id="privacy-modal" class="legal-modal" aria-hidden="true">
+    <div class="legal-modal__backdrop"></div>
+    <div class="legal-modal__content">
+      <button class="legal-modal__close" aria-label="Закрыть">&times;</button>
+      <h2>Политика конфиденциальности</h2>
+      <div class="legal-modal__text">
+        <h3>1. Общие положения</h3>
+        <p>Настоящая Политика конфиденциальности определяет порядок обработки и защиты персональных данных пользователей сайта refinevisuals.com (далее — Сайт), принадлежащего студии Refine Visuals (далее — Оператор).</p>
+        <p>Используя Сайт, вы соглашаетесь с условиями данной Политики. Если вы не согласны с условиями, просим не использовать Сайт.</p>
+        <h3>2. Какие данные мы собираем</h3>
+        <p>Мы можем собирать следующие данные: имя, адрес электронной почты, номер телефона (при заполнении формы обратной связи или направлении заявки), а также технические данные — IP-адрес, тип браузера, время посещения, источник перехода.</p>
+        <h3>3. Цели обработки данных</h3>
+        <p>Персональные данные используются для: связи с вами по вашему запросу, выполнения заказов на услуги фото и видеосъёмки, улучшения работы Сайта и анализа посещаемости.</p>
+        <h3>4. Защита данных</h3>
+        <p>Мы принимаем организационные и технические меры для защиты ваших персональных данных от несанкционированного доступа, изменения, раскрытия или уничтожения. Данные не передаются третьим лицам без вашего согласия, за исключением случаев, предусмотренных законодательством Российской Федерации.</p>
+        <h3>5. Файлы cookie</h3>
+        <p>Сайт может использовать файлы cookie для обеспечения корректной работы и сбора анонимной статистики. Вы можете отключить cookie в настройках браузера.</p>
+        <h3>6. Права пользователя</h3>
+        <p>Вы вправе запросить информацию о ваших персональных данных, потребовать их изменения или удаления, направив запрос на <a href="mailto:refine.visual@yandex.ru">refine.visual@yandex.ru</a>.</p>
+        <h3>7. Изменения</h3>
+        <p>Оператор оставляет за собой право вносить изменения в настоящую Политику. Актуальная версия всегда доступна на Сайте.</p>
+        <p><em>Дата последнего обновления: апрель 2026 г.</em></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="terms-modal" class="legal-modal" aria-hidden="true">
+    <div class="legal-modal__backdrop"></div>
+    <div class="legal-modal__content">
+      <button class="legal-modal__close" aria-label="Закрыть">&times;</button>
+      <h2>Условия использования</h2>
+      <div class="legal-modal__text">
+        <h3>1. Общие положения</h3>
+        <p>Настоящие Условия использования регулируют порядок использования сайта refinevisuals.com и оказания услуг студией Refine Visuals.</p>
+        <h3>2. Описание услуг</h3>
+        <p>Refine Visuals оказывает услуги по созданию продуктовых фото и видеоматериалов с применением технологий искусственного интеллекта, включая: продуктовую фото и видеосъёмку, ретушь и цветокоррекцию, разработку креативных концепций и визуальный дизайн.</p>
+        <h3>3. Порядок работы</h3>
+        <p>Заказчик направляет заявку через Сайт или мессенджер. Стороны согласовывают объём работ, сроки и стоимость. Работа начинается после подтверждения заказа и предоплаты (если предусмотрена).</p>
+        <h3>4. Авторские права</h3>
+        <p>Все материалы, размещённые на Сайте (фотографии, тексты, дизайн, логотип), являются интеллектуальной собственностью Refine Visuals и защищены законодательством Российской Федерации об авторском праве. Копирование, распространение или иное использование материалов без письменного согласия запрещено.</p>
+        <h3>5. Права на созданный контент</h3>
+        <p>Готовые фото и видеоматериалы, созданные по заказу клиента, передаются заказчику после полной оплаты. Заказчик получает право использовать материалы для коммерческих целей в рамках согласованного объёма. Refine Visuals оставляет за собой право использовать материалы в портфолио при отсутствии отдельных ограничений от заказчика.</p>
+        <h3>6. Ответственность</h3>
+        <p>Refine Visuals не несёт ответственности за решения, принятые на основе информации на Сайте. Все примеры работ на Сайте являются демонстрационными и созданы с помощью генеративных технологий.</p>
+        <h3>7. Применимое право</h3>
+        <p>Настоящие Условия регулируются и толкуются в соответствии с законодательством Российской Федерации.</p>
+        <h3>8. Контакты</h3>
+        <p>По любым вопросам: <a href="mailto:refine.visual@yandex.ru">refine.visual@yandex.ru</a></p>
+        <p><em>Дата последнего обновления: апрель 2026 г.</em></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
